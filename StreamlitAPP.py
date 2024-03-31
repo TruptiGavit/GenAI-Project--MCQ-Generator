@@ -9,8 +9,48 @@ from langchain.callbacks import get_openai_callback
 from src.mcqgenerator.mcqgenerator import generate_eval_chain
 from src.mcqgenerator.logger import logging
 
-with open('C:/Users/ADMIN/Downloads/GenAI/GenAI Projects (Open AI)/GenAI-Project--MCQ-Generator/Response.json', 'r') as file:
-    RESPONSE_JSON = json.load(file)
+RESPONSE_JSON = {
+    "1": {
+        "no": "1",
+        "mcq": "multiple choice questions",
+        "options":{
+            "a": "choice here",
+            "b": "choice here",
+            "c": "choice here",
+            "d": "choice here"
+        },
+        
+        "correct": "correct answer"
+    },
+    
+    "2": {
+        "no": "2",
+        "mcq": "multiple choice questions",
+        "options":{
+            "a": "choice here",
+            "b": "choice here",
+            "c": "choice here",
+            "d": "choice here"
+        },
+        
+        "correct": "correct answer"
+    },
+    
+    "3": {
+        "no": "3",
+        "mcq": "multiple choice questions",
+        "options":{
+            "a": "choice here",
+            "b": "choice here",
+            "c": "choice here",
+            "d": "choice here"
+        },
+        
+        "correct": "correct answer"
+    }
+    
+    
+}
 
 
 #creating a title for the app
