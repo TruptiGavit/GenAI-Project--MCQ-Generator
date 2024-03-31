@@ -15,7 +15,7 @@ import PyPDF2
 load_dotenv()
 
 key=os.getenv("My_OpenAI_Key")
-print(key)
+
 
 llm=ChatOpenAI(openai_api_key=key,model_name="gpt-3.5-turbo",temperature=0.7)
 
